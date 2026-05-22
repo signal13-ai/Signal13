@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>SIGNAL — Creative Collective</title>
+  <meta name="description" content="SIGNAL — творческий коллектив. Видео, статика, интеграция ИИ в кино. Creative collective. Video production, AI in cinema.">
+  <meta name="keywords" content="signal, видео, AI, кино, creative collective, film, video production, AI cinema">
+  <meta name="author" content="Elizaveta Shefova">
+
+  <!-- Open Graph — превью ссылки в мессенджерах -->
+  <meta property="og:title" content="SIGNAL — Creative Collective">
+  <meta property="og:description" content="AI was going to replace us anyway. We said hi first. Signal received.">
+  <meta property="og:type" content="website">
+  <!-- og:image — добавь свою картинку в assets/og.jpg (1200x630px) -->
+  <!-- <meta property="og:image" content="assets/og.jpg"> -->
+
+  <!-- Канонический URL — поменяй на свой адрес после публикации -->
+  <!-- <link rel="canonical" href="https://signal13.github.io"> -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Unbounded:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body class="lang-ru">
+
+  <nav class="nav">
+    <a href="#hero" class="nav-logo" aria-label="SIGNAL — на главную">
+      <svg class="logo-svg" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M32 5 Q12 5 12 20 Q12 27 22 29 Q34 31 34 42 Q34 48 16 48"
+              stroke="#c8c6bc" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <!-- НАЗВАНИЕ В ШАПКЕ -->
+      <span class="logo-text">IGNAL</span>
+    </a>
+
+    <div class="nav-right">
+      <ul class="nav-links" id="nav-links" role="navigation" aria-label="Основная навигация">
+        <li><a href="#works"   data-ru="работы"  data-en="works"   data-de="arbeiten">работы</a></li>
+        <li><a href="#about"   data-ru="о нас"   data-en="about"   data-de="über uns">о нас</a></li>
+        <li><a href="#contact" data-ru="контакт" data-en="contact" data-de="kontakt">контакт</a></li>
+      </ul>
+
+      <div class="lang-switch" role="group" aria-label="Выбор языка">
+        <button class="lang-btn active" data-lang="ru" aria-pressed="true">RU</button>
+        <button class="lang-btn"        data-lang="en" aria-pressed="false">EN</button>
+        <button class="lang-btn"        data-lang="de" aria-pressed="false">DE</button>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="hero-tag">// SIGNAL</div>
+      <h1 class="hero-title" id="hero-title">
+        <!-- Текст подставляется из JS -->
+      </h1>
+      <p class="hero-quote" id="hero-quote"></p>
+      <a href="#works" class="hero-cta" id="hero-cta">
+        <span></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </section>
+
+    <section class="works" id="works" aria-label="Работы">
+      <div class="section-label" id="label-works"></div>
+      <div class="works-grid">
+
+        <!-- ВИДЕО 1 — замени YouTube ID после /embed/ -->
+        <article class="video-card">
+          <div class="video-wrap">
+            <iframe width="100%" height="100%"
+              src="https://www.youtube.com/embed/dcL5uwy43IA?si=T24Vp-nW41DYqKgl"
+              title="SIGNAL — 01"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="card-info">
+            <div class="card-type" data-ru="ВИДЕО · AI · 2024" data-en="VIDEO · AI · 2024" data-de="VIDEO · KI · 2024">ВИДЕО · AI · 2024</div>
+            <div class="card-title">— 01</div>
+            <div class="card-desc" data-ru="AI-генерация. SIGNAL." data-en="AI generated. SIGNAL." data-de="KI-generiert. SIGNAL.">AI-генерация. SIGNAL.</div>
+          </div>
+        </article>
+
+        <!-- ВИДЕО 2 -->
+        <article class="video-card">
+          <div class="video-wrap">
+            <iframe width="100%" height="100%"
+              src="https://www.youtube.com/embed/vj9r2EYatQk?si=z8hj6rut6AMSP-Cv"
+              title="SIGNAL — 02"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="card-info">
+            <div class="card-type" data-ru="ВИДЕО · AI · 2024" data-en="VIDEO · AI · 2024" data-de="VIDEO · KI · 2024">ВИДЕО · AI · 2024</div>
+            <div class="card-title">— 02</div>
+            <div class="card-desc" data-ru="AI-генерация. SIGNAL." data-en="AI generated. SIGNAL." data-de="KI-generiert. SIGNAL.">AI-генерация. SIGNAL.</div>
+          </div>
+        </article>
+
+        <!-- НОВОЕ ВИДЕО — копируй блок выше и вставь сюда -->
+
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-label="О нас">
+      <div class="section-label" id="label-about"></div>
+      <div class="about-inner">
+        <p class="about-text"
+           data-ru="SIGNAL — творческий коллектив. Производство видео и интеграция ИИ в кино — и не только. Бэкграунд: 15 лет профессионального кинопроизводства. В какой-то момент мы тоже решили не отставать от происходящего."
+           data-en="SIGNAL — creative collective. Video production and AI integration in cinema — and beyond. Background: 15 years in professional filmmaking. At some point we decided to keep up with what's happening."
+           data-de="SIGNAL — kreatives Kollektiv. Videoproduktion und KI-Integration im Kino — und darüber hinaus. Hintergrund: 15 Jahre professionelles Filmschaffen. Irgendwann haben wir beschlossen, nicht zurückzubleiben.">
+        </p>
+
+        <div class="film-section">
+          <div class="film-label">фильмография · Elizaveta Shefova</div>
+          <table class="film-table" aria-label="Фильмография">
+            <thead class="sr-only">
+              <tr><th>Год</th><th>Проект</th><th>Роль</th><th>Примечание</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="f-year">2024</td>
+                <td class="f-title">Stripped <span class="f-sub" data-ru="Spielfilm, DE" data-en="Feature film, DE" data-de="Spielfilm, DE">Spielfilm, DE</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note" data-ru="реж. М. Госсманн" data-en="dir. M. Gossmann" data-de="Regie: M. Gossmann">реж. М. Госсманн</td>
+              </tr>
+              <tr>
+                <td class="f-year">2023</td>
+                <td class="f-title">Der Zaubersack <span class="f-sub" data-ru="Театр, DE" data-en="Theater, DE" data-de="Theater, DE">Театр, DE</span></td>
+                <td class="f-role" data-ru="худ.-постановщик" data-en="Production Designer" data-de="Bühnenbildnerin">худ.-постановщик</td>
+                <td class="f-note" data-ru="реж. Н. Углицких" data-en="dir. N. Uglitskikh" data-de="Regie: N. Uglitskikh">реж. Н. Углицких</td>
+              </tr>
+              <tr>
+                <td class="f-year">2022</td>
+                <td class="f-title">Rinal <span class="f-sub" data-ru="к/м" data-en="Short film" data-de="Kurzfilm">к/м</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note fest">Cannes · NYC · LA</td>
+              </tr>
+              <tr>
+                <td class="f-year">2021</td>
+                <td class="f-title" data-ru="Зоськина заправка" data-en="Zoskina Zapravka" data-de="Zoskina Zapravka">Зоськина заправка</td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note" data-ru="реж. Н. Углицких" data-en="dir. N. Uglitskikh" data-de="Regie: N. Uglitskikh">реж. Н. Углицких</td>
+              </tr>
+              <tr>
+                <td class="f-year">2019–20</td>
+                <td class="f-title" data-ru="Ищейка 4 & 5 <span class='f-sub'>сериал, ORT</span>" data-en="Ishcheyka 4 & 5 <span class='f-sub'>TV series, ORT</span>" data-de="Ishcheyka 4 & 5 <span class='f-sub'>Serie, ORT</span>">Ищейка 4 & 5 <span class="f-sub">сериал, ORT</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note" data-ru="реж. А. Головков" data-en="dir. A. Golovkov" data-de="Regie: A. Golovkov">реж. А. Головков</td>
+              </tr>
+              <tr>
+                <td class="f-year">2018</td>
+                <td class="f-title" data-ru="Я вернусь <span class='f-sub'>Spielfilm</span>" data-en="Ya Vernus <span class='f-sub'>Feature film</span>" data-de="Ya Vernus <span class='f-sub'>Spielfilm</span>">Я вернусь <span class="f-sub">Spielfilm</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note fest" data-ru="Stalker · Fajr · Ереван" data-en="Stalker · Fajr · Yerevan" data-de="Stalker · Fajr · Erevan">Stalker · Fajr · Ереван</td>
+              </tr>
+              <tr>
+                <td class="f-year">2018</td>
+                <td class="f-title" data-ru="Отчаянные <span class='f-sub'>сериал, ORT</span>" data-en="Otchayannye <span class='f-sub'>TV series, ORT</span>" data-de="Otchayannye <span class='f-sub'>Serie, ORT</span>">Отчаянные <span class="f-sub">сериал, ORT</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note"></td>
+              </tr>
+              <tr>
+                <td class="f-year">2017</td>
+                <td class="f-title" data-ru="Ищейка 2 & 3 <span class='f-sub'>сериал, ORT</span>" data-en="Ishcheyka 2 & 3 <span class='f-sub'>TV series, ORT</span>" data-de="Ishcheyka 2 & 3 <span class='f-sub'>Serie, ORT</span>">Ищейка 2 & 3 <span class="f-sub">сериал, ORT</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note" data-ru="реж. Д. Брусникин" data-en="dir. D. Brusnikin" data-de="Regie: D. Brusnikin">реж. Д. Брусникин</td>
+              </tr>
+              <tr>
+                <td class="f-year">2016</td>
+                <td class="f-title" data-ru="Метод Поляковой <span class='f-sub'>сериал, NTV</span>" data-en="Metod Poliakovoy <span class='f-sub'>TV series, NTV</span>" data-de="Metod Poliakovoy <span class='f-sub'>Serie, NTV</span>">Метод Поляковой <span class="f-sub">сериал, NTV</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note" data-ru="реж. А. Мармонтов" data-en="dir. A. Marmontov" data-de="Regie: A. Marmontov">реж. А. Мармонтов</td>
+              </tr>
+              <tr>
+                <td class="f-year">2015</td>
+                <td class="f-title" data-ru="Карина Красная <span class='f-sub'>ист. сериал</span>" data-en="Karina Krasnaya <span class='f-sub'>Historical series</span>" data-de="Karina Krasnaya <span class='f-sub'>Historische Serie</span>">Карина Красная <span class="f-sub">ист. сериал</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note" data-ru="реж. Е. Лаврентьев" data-en="dir. E. Lavrentiev" data-de="Regie: E. Lavrentiev">реж. Е. Лаврентьев</td>
+              </tr>
+              <tr>
+                <td class="f-year">2014</td>
+                <td class="f-title" data-ru="Ищейка 1 <span class='f-sub'>сериал, ORT</span>" data-en="Ishcheyka 1 <span class='f-sub'>TV series, ORT</span>" data-de="Ishcheyka 1 <span class='f-sub'>Serie, ORT</span>">Ищейка 1 <span class="f-sub">сериал, ORT</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note" data-ru="реж. Д. Брусникин" data-en="dir. D. Brusnikin" data-de="Regie: D. Brusnikin">реж. Д. Брусникин</td>
+              </tr>
+              <tr>
+                <td class="f-year">2014</td>
+                <td class="f-title" data-ru="Концерт <span class='f-sub'>к/м</span>" data-en="Kontsert <span class='f-sub'>Short film</span>" data-de="Kontsert <span class='f-sub'>Kurzfilm</span>">Концерт <span class="f-sub">к/м</span></td>
+                <td class="f-role" data-ru="худ.-постановщик" data-en="Production Designer" data-de="Szenenbildnerin">худ.-постановщик</td>
+                <td class="f-note fest" data-ru="Кинотавр" data-en="Kinotavr" data-de="Kinotavr">Кинотавр</td>
+              </tr>
+              <tr>
+                <td class="f-year">2011</td>
+                <td class="f-title" data-ru="Метод Фрейда <span class='f-sub'>сериал, ORT</span>" data-en="Metod Freyda <span class='f-sub'>TV series, ORT</span>" data-de="Metod Freyda <span class='f-sub'>Serie, ORT</span>">Метод Фрейда <span class="f-sub">сериал, ORT</span></td>
+                <td class="f-role" data-ru="худ. по костюмам" data-en="Costume Designer" data-de="Kostümbildnerin">худ. по костюмам</td>
+                <td class="f-note" data-ru="реж. М. Вайнберг" data-en="dir. M. Vainberg" data-de="Regie: M. Vainberg">реж. М. Вайнберг</td>
+              </tr>
+              <tr>
+                <td class="f-year">2004–09</td>
+                <td class="f-title" data-ru="Клипы и реклама <span class='f-sub'>Tokio, Znaki и др.</span>" data-en="Music videos & commercials <span class='f-sub'>Tokio, Znaki et al.</span>" data-de="Musikvideos & Werbung <span class='f-sub'>Tokio, Znaki u.a.</span>">Клипы и реклама <span class="f-sub">Tokio, Znaki и др.</span></td>
+                <td class="f-role" data-ru="стилист" data-en="Stylist" data-de="Stylistin">стилист</td>
+                <td class="f-note"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="contact" id="contact">
+    <div class="contact-left">
+      <div class="contact-label" id="label-contact"></div>
+      <!-- EMAIL — меняй в обоих местах -->
+      <a href="mailto:elizavetashefova@gmail.com" class="contact-email">
+        elizavetashefova@gmail.com
+      </a>
+    </div>
+    <div class="signal-end">SIGNAL<br><span class="slashes">///</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

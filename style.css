@@ -1,0 +1,456 @@
+/* ═══════════════════════════════════════════════════
+   SIGNAL13 — style.css
+   ═══════════════════════════════════════════════════
+
+   ЦВЕТА — меняй значения переменных ниже:
+   --bg        фон страницы
+   --bg2       фон при наведении
+   --line      цвет линий и рамок
+   --text      основной текст
+   --muted     приглушённый текст
+   --dim       очень приглушённый
+   --fest      цвет фестивальных меток
+═══════════════════════════════════════════════════ */
+
+:root {
+  --bg:     #272727;
+  --bg2:    #202020;
+  --line:   #383838;
+  --text:   #c8c6bc;
+  --muted:  #585858;
+  --dim:    #3a3a3a;
+  --fest:   #4a7a4a;
+
+  /* ШРИФТЫ — меняй названия если подключаешь другие */
+  --font-mono:    'Share Tech Mono', monospace;
+  --font-display: 'Unbounded', sans-serif;
+}
+
+/* ─── RESET ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+img, iframe { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+button { background: none; border: none; cursor: pointer; font-family: inherit; }
+
+/* ─── BASE ─── */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  line-height: 1.6;
+  cursor: crosshair;
+}
+
+/* ─── NAV ─── */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 48px;
+  border-bottom: 0.5px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.logo-svg {
+  width: 20px;
+  height: 26px;
+}
+
+.logo-text {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--text);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--text); }
+
+/* ─── LANG SWITCH ─── */
+.lang-switch {
+  display: flex;
+  gap: 2px;
+}
+
+.lang-btn {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  padding: 4px 8px;
+  border: 0.5px solid transparent;
+  transition: all 0.2s;
+}
+
+.lang-btn.active {
+  color: var(--text);
+  border-color: var(--line);
+}
+
+.lang-btn:hover { color: var(--text); }
+
+/* ─── BURGER (мобильное меню) ─── */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+}
+
+.burger span {
+  display: block;
+  width: 22px;
+  height: 0.5px;
+  background: var(--text);
+  transition: all 0.3s;
+}
+
+.burger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+
+/* ─── HERO ─── */
+.hero {
+  padding: 72px 48px 56px;
+  border-bottom: 0.5px solid var(--line);
+}
+
+.hero-tag {
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4.5vw, 56px);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 28px;
+}
+
+.hero-quote {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  line-height: 1.8;
+  border-left: 0.5px solid var(--dim);
+  padding-left: 20px;
+  margin-bottom: 40px;
+  max-width: 520px;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.hero-cta:hover { color: var(--text); }
+
+.hero-cta svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s;
+}
+
+.hero-cta:hover svg { transform: translateY(3px); }
+
+/* ─── SECTION LABEL ─── */
+.section-label {
+  padding: 28px 48px 20px;
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  color: var(--muted);
+  border-bottom: 0.5px solid var(--line);
+}
+
+/* ─── WORKS GRID ─── */
+.works-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--line);
+}
+
+.video-card {
+  background: var(--bg);
+  transition: background 0.2s;
+}
+
+.video-card:hover { background: var(--bg2); }
+
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  background: #1a1a1a;
+  overflow: hidden;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+.card-info {
+  padding: 16px 24px 24px;
+  border-top: 0.5px solid var(--line);
+}
+
+.card-type {
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.card-title {
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+}
+
+.card-desc {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ─── ABOUT ─── */
+.about-inner {
+  padding: 40px 48px 56px;
+}
+
+.about-text {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.8;
+  max-width: 640px;
+  margin-bottom: 48px;
+  letter-spacing: 0.03em;
+}
+
+/* ─── FILMOGRAPHY ─── */
+.film-section {}
+
+.film-label {
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.film-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.film-table tr {
+  border-bottom: 0.5px solid var(--dim);
+  transition: background 0.15s;
+}
+
+.film-table tr:first-child { border-top: 0.5px solid var(--dim); }
+.film-table tr:hover { background: var(--bg2); }
+
+.film-table td {
+  padding: 10px 0;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.f-year  { color: var(--muted); width: 60px; letter-spacing: 0.1em; }
+.f-title { color: var(--text); width: 42%; padding-right: 20px; }
+.f-sub   { display: block; font-size: 9px; color: var(--muted); margin-top: 2px; letter-spacing: 0.1em; }
+.f-role  { color: var(--muted); width: 28%; font-size: 10px; letter-spacing: 0.05em; }
+.f-note  { color: var(--dim); font-size: 10px; text-align: right; }
+.f-note.fest { color: var(--fest); }
+
+/* ─── CONTACT ─── */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 48px 48px;
+  border-top: 0.5px solid var(--line);
+}
+
+.contact-label {
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.contact-email {
+  font-size: 14px;
+  color: var(--text);
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+
+.contact-email:hover { color: #fff; }
+
+.signal-end {
+  font-size: 9px;
+  letter-spacing: 0.35em;
+  color: var(--dim);
+  text-align: right;
+  line-height: 2;
+}
+
+.slashes { color: var(--line); }
+
+/* ═══════════════════════════════════════════════════
+   МОБИЛЬНАЯ АДАПТАЦИЯ
+   Всё что ниже — для экранов меньше 768px
+═══════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  .nav { padding: 16px 20px; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: var(--bg);
+    border-bottom: 0.5px solid var(--line);
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-links.open { display: flex; }
+  .burger { display: flex; }
+
+  .hero { padding: 40px 20px 36px; }
+  .section-label { padding: 24px 20px 16px; }
+
+  .works-grid { grid-template-columns: 1fr; }
+
+  .about-inner { padding: 32px 20px 40px; }
+
+  /* Скрываем некоторые колонки таблицы на мобильном */
+  .f-role, .f-note { display: none; }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 36px 20px;
+  }
+}
+
+/* ─── АНИМАЦИЯ ПОЯВЛЕНИЯ ─── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── SCREEN READER ONLY ─── */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* ─── МОБИЛЬНАЯ ТАБЛИЦА — горизонтальный скролл ─── */
+@media (max-width: 768px) {
+  .film-section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .film-table { min-width: 420px; }
+  .f-note { display: table-cell; }
+}
+
+/* ─── OVERFLOW GUARD — ничего не вылезает за экран ─── */
+html, body { overflow-x: hidden; }
+* { min-width: 0; }
+
+/* ─── HERO TITLE — кинематографичный ритм ─── */
+.hero-title em {
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* ─── TABLET (768px – 1024px) ─── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav { padding: 18px 28px; }
+  .hero { padding: 52px 28px 40px; }
+  .section-label { padding: 24px 28px 16px; }
+  .about-inner { padding: 32px 28px 48px; }
+  .contact { padding: 36px 28px; }
+  .hero-title { font-size: clamp(24px, 3.5vw, 38px); }
+}
+
+/* ─── МОБИЛЬНАЯ ТАБЛИЦА — горизонтальный скролл ─── */
+@media (max-width: 768px) {
+  .film-section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .film-table { min-width: 420px; }
+  .f-note { display: table-cell; }
+
+  /* hero на мобильном — чуть компактнее */
+  .hero-title { font-size: clamp(22px, 7vw, 32px); }
+  .hero-quote { font-size: 10px; }
+
+  /* nav не ломается на узких экранах */
+  .nav-right { gap: 12px; }
+  .lang-switch { gap: 1px; }
+  .lang-btn { padding: 4px 6px; font-size: 8px; }
+}
+
+/* ─── SCREEN READER ONLY ─── */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
