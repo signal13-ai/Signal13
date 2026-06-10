@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>SIGNAL — Elizaveta Shefova</title>
+  <meta name="description" content="SIGNAL — Visual Development & AI-assisted Post-Production Support">
+  <meta property="og:title" content="SIGNAL — Elizaveta Shefova">
+  <meta property="og:description" content="Working with production pain.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      min-height: 100vh;
+      background: #1e1e1e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Share Tech Mono', 'Courier New', monospace;
+    }
+
+    .card {
+      background: #272727;
+      border-radius: 20px;
+      padding: 48px 36px 44px;
+      width: 100%;
+      max-width: 360px;
+      margin: 24px;
+    }
+
+    .lang-row { display: flex; gap: 2px; margin-bottom: 36px; }
+    .lang-btn {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 9px; letter-spacing: 0.15em; color: #484848;
+      background: none; border: 0.5px solid transparent;
+      padding: 4px 9px; cursor: pointer; transition: all 0.2s;
+    }
+    .lang-btn.active { color: #c8c6bc; border-color: #383838; }
+
+    .logo { display: flex; align-items: center; margin-bottom: 48px; }
+    .logo svg { width: 18px; height: 24px; }
+    .logo-text { font-size: 13px; letter-spacing: 0.2em; color: #c8c6bc; }
+
+    .tagline { font-size: 13px; color: #c8c6bc; line-height: 1.95; letter-spacing: 0.05em; margin-bottom: 14px; }
+    .service { font-size: 9px; color: #585858; letter-spacing: 0.1em; line-height: 1.7; margin-bottom: 10px; }
+    .sub { font-size: 10px; color: #c8a84b; letter-spacing: 0.1em; margin-bottom: 48px; }
+
+    .divider { height: 0.5px; background: #383838; margin-bottom: 28px; }
+
+    .contacts { display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; }
+    .contact-row { display: flex; justify-content: space-between; align-items: baseline; }
+    .contact-label { font-size: 9px; letter-spacing: 0.2em; color: #484848; }
+    .contact-value { font-size: 11px; color: #888; letter-spacing: 0.04em; }
+    .contact-value a { color: #888; text-decoration: none; transition: color 0.2s; }
+    .contact-value a:hover { color: #c8c6bc; }
+
+    .footer { display: flex; justify-content: space-between; align-items: flex-end; }
+    .name { font-size: 10px; color: #484848; letter-spacing: 0.1em; line-height: 1.9; }
+    .slashes { font-size: 9px; letter-spacing: 0.3em; color: #2e2e2e; }
+
+    .site-link {
+      display: block; text-align: center; margin-top: 32px;
+      font-size: 9px; letter-spacing: 0.2em; color: #383838;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .site-link:hover { color: #585858; }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="lang-row">
+    <button class="lang-btn active" data-lang="ru">RU</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="de">DE</button>
+  </div>
+
+  <div class="logo">
+    <svg viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 5 Q12 5 12 20 Q12 27 22 29 Q34 31 34 42 Q34 48 16 48"
+            stroke="#c8c6bc" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    <span class="logo-text">IGNAL</span>
+  </div>
+
+  <div class="tagline" id="tagline">Дорого? Долго? Проще переснять?</div>
+  <div class="service" id="service">Visual Development & AI-assisted Post-Production Support</div>
+  <div class="sub" id="sub">Работаем с болью продакшна.</div>
+
+  <div class="divider"></div>
+
+  <div class="contacts">
+    <div class="contact-row">
+      <span class="contact-label" id="label-site">сайт</span>
+      <span class="contact-value"><a href="https://signal13received.com">signal13received.com</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label" id="label-mail">почта</span>
+      <span class="contact-value"><a href="mailto:signal13.received@gmail.com">signal13.received@gmail.com</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label" id="label-phone">тел.</span>
+      <span class="contact-value"><a href="tel:+4915773677955">+49 157 736 779 55</a></span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="name">
+      Elizaveta Shefova<br>
+      <span style="color:#333">SIGNAL</span>
+    </div>
+    <div class="slashes">///</div>
+  </div>
+
+  <a href="https://signal13received.com" class="site-link">signal13received.com →</a>
+</div>
+
+<script>
+const i18n = {
+  ru: { tagline: 'Дорого? Долго? Проще переснять?', service: 'Visual Development & AI-assisted Post-Production Support', sub: 'Работаем с болью продакшна.', site: 'сайт', mail: 'почта', phone: 'тел.' },
+  en: { tagline: 'Too expensive? Too long? Need a reshoot?', service: 'Visual Development & AI-assisted Post-Production Support', sub: 'Working with production pain.', site: 'web', mail: 'email', phone: 'phone' },
+  de: { tagline: 'Zu teuer? Zu lang? Neu drehen?', service: 'Visual Development & KI-gestützte Postproduktion', sub: 'Wir arbeiten mit Production Pain.', site: 'web', mail: 'email', phone: 'Tel.' }
+};
+
+function setLang(lang) {
+  const t = i18n[lang];
+  document.documentElement.lang = lang;
+  document.getElementById('tagline').textContent   = t.tagline;
+  document.getElementById('service').textContent   = t.service;
+  document.getElementById('sub').textContent       = t.sub;
+  document.getElementById('label-site').textContent  = t.site;
+  document.getElementById('label-mail').textContent  = t.mail;
+  document.getElementById('label-phone').textContent = t.phone;
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+  try { localStorage.setItem('signal-card-lang', lang); } catch(e) {}
+}
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => setLang(btn.dataset.lang));
+});
+
+(function() {
+  let lang = 'ru';
+  try { lang = localStorage.getItem('signal-card-lang') || 'ru'; } catch(e) {}
+  setLang(lang);
+})();
+</script>
+
+</body>
+</html>
