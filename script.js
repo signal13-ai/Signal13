@@ -14,7 +14,7 @@ const i18n = {
     labelAbout:   '— О НАС',
     labelContact: '// СВЯЗАТЬСЯ',
     filmLabel:    'фильмография · Elizaveta Shefova',
-    aboutText:    'SIGNAL — творческий коллектив. Производство видео и интеграция ИИ в кино — и не только. Бэкграунд: 15 лет профессионального кинопроизводства. В какой-то момент мы тоже решили не отставать от происходящего.',
+    aboutText:    'SIGNAL — Visual Development & AI-assisted Post-Production Support. Работаем с болью продакшна. Более 15 лет профессионального опыта в киноиндустрии.',
   },
   en: {
     heroTitle:    'Video&nbsp;· Stills<br><em>· AI · Cinema</em>',
@@ -24,7 +24,7 @@ const i18n = {
     labelAbout:   '— ABOUT',
     labelContact: '// CONTACT',
     filmLabel:    'filmography · Elizaveta Shefova',
-    aboutText:    'SIGNAL — creative collective. Video production and AI integration in cinema — and beyond. Background: 15 years in professional filmmaking. At some point we decided to keep up with what\'s happening.',
+    aboutText:    'SIGNAL — Visual Development & AI-assisted Post-Production Support. Working with production pain. 15+ years of professional film production experience.',
   },
   de: {
     heroTitle:    'Video&nbsp;· Fotografie<br><em>· KI · Kino</em>',
@@ -34,7 +34,7 @@ const i18n = {
     labelAbout:   '— ÜBER UNS',
     labelContact: '// KONTAKT',
     filmLabel:    'Filmografie · Elizaveta Shefova',
-    aboutText:    'SIGNAL — kreatives Kollektiv. Videoproduktion und KI-Integration im Kino — und darüber hinaus. Hintergrund: 15 Jahre professionelles Filmschaffen. Irgendwann haben wir beschlossen, nicht zurückzubleiben.',
+    aboutText:    'SIGNAL — Visual Development & KI-gestützte Postproduktion. Wir arbeiten mit den Problemen der Produktion. Über 15 Jahre professionelle Erfahrung in der Filmproduktion.',
   }
 };
 
