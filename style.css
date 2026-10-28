@@ -17,7 +17,7 @@
   --bg2:    #202020;
   --line:   #383838;
   --text:   #c8c6bc;
-  --muted:  #585858;
+  --muted:  #8f8d85; 
   --dim:    #3a3a3a;
   --fest:   #4a7a4a;
 
@@ -473,13 +473,12 @@ html, body { overflow-x: hidden; }
 
 /* ─── главный экран: текст о себе ─── */
 .hero-quote {
-  font-size: clamp(18px, 2.1vw, 24px);
-  color: #ebe9df;
-  letter-spacing: 0.02em;
-  line-height: 1.65;
+  font-size: clamp(18px, 2vw, 22px);
+  color: #c8c6bc;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
   max-width: 760px;
 }
-
 
 /* ─── контакты ─── */
 #label-contact {
