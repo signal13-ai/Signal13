@@ -304,6 +304,22 @@ body {
 .f-note  { color: var(--dim); font-size: 10px; text-align: right; }
 .f-note.fest { color: var(--fest); }
 
+/* ссылки в фильмографии */
+.film-links { display: flex; gap: 10px; margin-bottom: 20px; }
+.film-btn {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  border: 0.5px solid var(--line);
+  padding: 6px 12px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.film-btn:hover { color: var(--text); border-color: var(--muted); }
+.f-link { color: inherit; border-bottom: 0.5px solid var(--dim); transition: color 0.2s, border-color 0.2s; }
+.f-link:hover { color: #fff; border-color: var(--muted); }
+.f-sub .f-link { color: var(--muted); }
+.f-sub .f-link:hover { color: var(--text); }
+
 /* ─── CONTACT ─── */
 .contact {
   display: flex;
