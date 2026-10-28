@@ -473,12 +473,13 @@ html, body { overflow-x: hidden; }
 
 /* ─── главный экран: текст о себе ─── */
 .hero-quote {
-  font-size: 15px;
-  color: var(--text);
-  letter-spacing: 0.03em;
-  line-height: 1.9;
-  max-width: 600px;
+  font-size: clamp(18px, 2.1vw, 24px);
+  color: #ebe9df;
+  letter-spacing: 0.02em;
+  line-height: 1.65;
+  max-width: 760px;
 }
+
 
 /* ─── контакты ─── */
 #label-contact {
