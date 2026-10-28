@@ -8,33 +8,30 @@
 const i18n = {
   ru: {
     heroTitle:    'Видео&nbsp;· Статика<br><em>· AI · Кино</em>',
-    heroQuote:    'Мы внедрили ИИ в кино.<br>Кино нам этого ещё не простило.',
+    heroQuote:    'SIGNAL. Это не компания. Юридически даже не кружок. Это я, Елизавета Шефова.<br>Раньше я одевала актрису, теперь уговариваю нейросеть. Обе делают вид, что слушаются.',
     heroCta:      'смотреть работы',
     labelWorks:   '— РАБОТЫ',
-    labelAbout:   '— О НАС',
-    labelContact: '// СВЯЗАТЬСЯ',
-    filmLabel:    'фильмография · Elizaveta Shefova',
-    aboutText:    'SIGNAL — Visual Development & AI-assisted Post-Production Support. Работаем с болью продакшна. Более 15 лет профессионального опыта в киноиндустрии.',
+    labelAbout:   '— ФИЛЬМОГРАФИЯ',
+    labelContact: 'Столько пройдено вместе, а мы всё ещё не подружились. Связаться:',
+    filmLabel:    'Elizaveta Shefova',
   },
   en: {
     heroTitle:    'Video&nbsp;· Stills<br><em>· AI · Cinema</em>',
-    heroQuote:    'We put AI into cinema.<br>Cinema has not forgiven us yet.',
+    heroQuote:    'SIGNAL. This is not a company. Legally, not even a club. This is me, Elizaveta Shefova.<br>I used to dress an actress, now I coax a neural network. Both pretend to take direction.',
     heroCta:      'view works',
     labelWorks:   '— WORKS',
-    labelAbout:   '— ABOUT',
-    labelContact: '// CONTACT',
-    filmLabel:    'filmography · Elizaveta Shefova',
-    aboutText:    'SIGNAL — Visual Development & AI-assisted Post-Production Support. Working with production pain. 15+ years of professional film production experience.',
+    labelAbout:   '— FILMOGRAPHY',
+    labelContact: 'We&#39;ve come so far together, and we&#39;re still not friends. Get in touch:',
+    filmLabel:    'Elizaveta Shefova',
   },
   de: {
     heroTitle:    'Video&nbsp;· Fotografie<br><em>· KI · Kino</em>',
-    heroQuote:    'Wir haben KI ins Kino gebracht.<br>Das Kino hat uns das noch nicht verziehen.',
+    heroQuote:    'SIGNAL. Das ist keine Firma. Rechtlich nicht mal ein Verein. Das bin ich, Elizaveta Shefova.<br>Früher habe ich eine Schauspielerin eingekleidet, jetzt überrede ich eine KI. Beide tun so, als würden sie auf mich hören.',
     heroCta:      'arbeiten ansehen',
     labelWorks:   '— ARBEITEN',
-    labelAbout:   '— ÜBER UNS',
-    labelContact: '// KONTAKT',
-    filmLabel:    'Filmografie · Elizaveta Shefova',
-    aboutText:    'SIGNAL — Visual Development & KI-gestützte Postproduktion. Wir arbeiten mit den Problemen der Produktion. Über 15 Jahre professionelle Erfahrung in der Filmproduktion.',
+    labelAbout:   '— FILMOGRAFIE',
+    labelContact: 'So weit zusammen gekommen, und noch immer keine Freunde. Kontakt:',
+    filmLabel:    'Elizaveta Shefova',
   }
 };
 
@@ -70,7 +67,7 @@ function setLang(lang) {
   if (heroCta)      heroCta.textContent     = t.heroCta;
   if (labelWorks)   labelWorks.textContent  = t.labelWorks;
   if (labelAbout)   labelAbout.textContent  = t.labelAbout;
-  if (labelContact) labelContact.textContent= t.labelContact;
+  if (labelContact) labelContact.innerHTML   = t.labelContact;
 
   // About text и film label
   const aboutText = document.querySelector('.about-text');
