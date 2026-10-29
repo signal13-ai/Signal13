@@ -8,29 +8,29 @@
 const i18n = {
   ru: {
     heroTitle:    'Видео&nbsp;· Статика<br><em>· AI · Кино</em>',
-    heroQuote:    'SIGNAL. Это не компания. Юридически даже не кружок. Это я, Елизавета Шефова.<br>Раньше я одевала актрису, теперь уговариваю нейросеть. Обе делают вид, что слушаются.',
+    heroQuote:    '<span class="hl">SIGNAL.</span> Это не компания. Юридически даже не кружок. Это я, <span class="hl">Елизавета Шефова</span>.<br>Раньше я одевала актрису, теперь уговариваю нейросеть. Обе делают вид, что слушаются.',
     heroCta:      'смотреть работы',
     labelWorks:   '— РАБОТЫ',
     labelAbout:   '— ФИЛЬМОГРАФИЯ',
-    labelContact: 'Столько пройдено вместе, а мы всё ещё не подружились. Связаться:',
+    labelContact: 'Столько пройдено вместе, а мы всё ещё не подружились. Связаться…',
     filmLabel:    'Elizaveta Shefova',
   },
   en: {
     heroTitle:    'Video&nbsp;· Stills<br><em>· AI · Cinema</em>',
-    heroQuote:    'SIGNAL. This is not a company. Legally, not even a club. This is me, Elizaveta Shefova.<br>I used to dress an actress, now I coax a neural network. Both pretend to take direction.',
+    heroQuote:    '<span class="hl">SIGNAL.</span> This is not a company. Legally, not even a club. This is me, <span class="hl">Elizaveta Shefova</span>.<br>I used to dress an actress, now I coax a neural network. Both pretend to take direction.',
     heroCta:      'view works',
     labelWorks:   '— WORKS',
     labelAbout:   '— FILMOGRAPHY',
-    labelContact: 'We&#39;ve come so far together, and we&#39;re still not friends. Get in touch:',
+    labelContact: 'We&#39;ve come so far together, and we&#39;re still not friends. Get in touch…',
     filmLabel:    'Elizaveta Shefova',
   },
   de: {
     heroTitle:    'Video&nbsp;· Fotografie<br><em>· KI · Kino</em>',
-    heroQuote:    'SIGNAL. Das ist keine Firma. Rechtlich nicht mal ein Verein. Das bin ich, Elizaveta Shefova.<br>Früher habe ich eine Schauspielerin eingekleidet, jetzt überrede ich eine KI. Beide tun so, als würden sie auf mich hören.',
+    heroQuote:    '<span class="hl">SIGNAL.</span> Das ist keine Firma. Rechtlich nicht mal ein Verein. Das bin ich, <span class="hl">Elizaveta Shefova</span>.<br>Früher habe ich eine Schauspielerin eingekleidet, jetzt überrede ich eine KI. Beide tun so, als würden sie auf mich hören.',
     heroCta:      'arbeiten ansehen',
     labelWorks:   '— ARBEITEN',
     labelAbout:   '— FILMOGRAFIE',
-    labelContact: 'So weit zusammen gekommen, und noch immer keine Freunde. Kontakt:',
+    labelContact: 'So weit zusammen gekommen, und noch immer keine Freunde. Kontakt…',
     filmLabel:    'Elizaveta Shefova',
   }
 };
