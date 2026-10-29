@@ -9,8 +9,8 @@ const i18n = {
   ru: {
     heroTitle:    'Видео&nbsp;· Статика<br><em>· AI · Кино</em>',
     heroQuote:    '<span class="hl">SIGNAL.</span> Это не компания. Юридически даже не кружок. Это я, <span class="hl">Елизавета Шефова</span>.<br>Раньше я одевала актрису, теперь уговариваю нейросеть. Обе делают вид, что слушаются.',
-    heroCta:      'смотреть работы',
-    labelWorks:   '— РАБОТЫ',
+    heroCta:      'смотреть эксперименты',
+    labelWorks:   '— ЭКСПЕРИМЕНТЫ',
     labelAbout:   '— ФИЛЬМОГРАФИЯ',
     labelContact: 'Столько пройдено вместе, а мы всё ещё не подружились. Связаться…',
     filmLabel:    'Elizaveta Shefova',
@@ -18,8 +18,8 @@ const i18n = {
   en: {
     heroTitle:    'Video&nbsp;· Stills<br><em>· AI · Cinema</em>',
     heroQuote:    '<span class="hl">SIGNAL.</span> This is not a company. Legally, not even a club. This is me, <span class="hl">Elizaveta Shefova</span>.<br>I used to dress an actress, now I coax a neural network. Both pretend to take direction.',
-    heroCta:      'view works',
-    labelWorks:   '— WORKS',
+    heroCta:      'view experiments',
+    labelWorks:   '— EXPERIMENTS',
     labelAbout:   '— FILMOGRAPHY',
     labelContact: 'We&#39;ve come so far together, and we&#39;re still not friends. Get in touch…',
     filmLabel:    'Elizaveta Shefova',
@@ -27,8 +27,8 @@ const i18n = {
   de: {
     heroTitle:    'Video&nbsp;· Fotografie<br><em>· KI · Kino</em>',
     heroQuote:    '<span class="hl">SIGNAL.</span> Das ist keine Firma. Rechtlich nicht mal ein Verein. Das bin ich, <span class="hl">Elizaveta Shefova</span>.<br>Früher habe ich eine Schauspielerin eingekleidet, jetzt überrede ich eine KI. Beide tun so, als würden sie auf mich hören.',
-    heroCta:      'arbeiten ansehen',
-    labelWorks:   '— ARBEITEN',
+    heroCta:      'Experimente ansehen',
+    labelWorks:   '— EXPERIMENTE',
     labelAbout:   '— FILMOGRAFIE',
     labelContact: 'So weit zusammen gekommen, und noch immer keine Freunde. Kontakt…',
     filmLabel:    'Elizaveta Shefova',
